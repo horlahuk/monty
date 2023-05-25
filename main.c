@@ -9,6 +9,8 @@ void execute_opcode(char *opcode, stack_t **stack, unsigned int line_number)
         {"pop", opcode_pop},
         {"nop", opcode_nop},
 	{"add", opcode_add},
+	{"swap", opcode_swap},
+	{"pint", opcode_pint},
         {NULL, NULL}
     };
 
