@@ -35,10 +35,11 @@ void opcode_push(stack_t **stack, unsigned int n)
  * opcode_pall - Prints all the values on the stack, starting from the top of the stack.
  * @stack: Double pointer to the head of the stack
  */
-void opcode_pall(stack_t **stack, unsigned int n)
+void opcode_pall(stack_t **stack, unsigned int line_number)
 {
-	(void)n;
 	stack_t *current = *stack;
+
+	(void)line_number;
 
 	while (current != NULL)
 	{
